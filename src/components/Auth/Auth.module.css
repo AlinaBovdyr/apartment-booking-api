@@ -1,0 +1,14 @@
+.inputList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.inputItem {
+    margin-bottom: 25px;
+}
+
+.inputItem:last-child {
+    margin-bottom: 0;
+}

@@ -1,9 +1,8 @@
-
+import RegisterPage from './views/Register';
 
 function App() {
   return (
-    <div>
-    </div>
+    <RegisterPage />
   );
 }
 
