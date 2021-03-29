@@ -1,10 +1,10 @@
 import React from 'react';
 import Register from '../components/Auth/Register';
 
-const RegisterPage = () => {
+const RegisterView = () => {
     return (
         <Register />
     );
 };
 
-export default RegisterPage;
+export default RegisterView;

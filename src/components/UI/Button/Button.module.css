@@ -1,10 +1,13 @@
+@value colors: '../../../styles/variables/colors.css';
+@value mainColor, accentColor from colors;
+
 .button {
     display: flex;
     justify-content: center;
     align-items: center;
     min-width: 200px;
     padding: 11px;
-    background: #FF662D;
+    background: accentColor;
     border: 1px solid transparent;
-    color: #FFFFFF;
+    color: mainColor;
 }

@@ -1,0 +1,16 @@
+@value colors: '../../../styles/variables/colors.css';
+@value mainColor, accentColor from colors;
+
+.select {
+    appearance: none;
+    width: 220px;
+    padding: 11px 20px;
+    border: 2px solid accentColor;
+    outline: none;
+    cursor: pointer;
+    background-image: url('./polygon.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-origin: border-box;
+    background-position: 185px 20px;
+}

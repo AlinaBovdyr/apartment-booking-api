@@ -1,7 +1,10 @@
+@value colors: '../../../styles/variables/colors.css';
+@value mainColor, accentColor from colors;
+
 .input {
     padding: 10px 32px 12px;
     width: 100%;
-    background: #FFFFFF;
-    border: 2px solid #FF662D;
+    background: mainColor;
+    border: 2px solid accentColor;
     outline: none;
 }

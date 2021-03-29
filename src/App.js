@@ -1,8 +1,8 @@
-import RegisterPage from './views/Register';
+import Select from './components/UI/Select';
 
 function App() {
   return (
-    <RegisterPage />
+    <Select/>
   );
 }
 
