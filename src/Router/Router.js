@@ -1,5 +1,5 @@
-import React, { Suspense, lazy, Route } from 'react';
-import { Switch } from 'react-router-dom';
+import React, { Suspense, lazy } from 'react';
+import { Switch, Route } from 'react-router-dom';
 // import PrivateRoute from './PrivateRoute';
 // import PublicRoute from './PublicRoute';
 import routes from './routes';
@@ -25,17 +25,17 @@ const Router = () => {
       <Switch>
         <Route path={routes.home} exact component={HomeView}/>
           <Route 
-              path={routes.register}
-          component={RegisterView}
+            path={routes.register}
+            component={RegisterView}
           />
-            <Route
-              path={routes.login} 
+          <Route
+            path={routes.login} 
             component={LoginView}
           />
-            {/* <Route 
-              path={routes.apartments}
-          component={ApartmentsView}
-            /> */}
+          <Route 
+            path={routes.apartments}
+            component={ApartmentsView}
+          />
       </Switch>
     </Suspense>
   );

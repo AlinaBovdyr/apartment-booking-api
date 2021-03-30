@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.fieldWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input, .btn {
+    width: 220px;
+}
+
+.input {
+    margin-left: 30px;
+}
+
+.input::placeholder {
+    color: #000;
+}

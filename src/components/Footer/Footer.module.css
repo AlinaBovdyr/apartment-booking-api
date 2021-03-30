@@ -1,0 +1,7 @@
+@value colors: '../../styles/variables/colors.css';
+@value bgColor from colors;
+
+.wrapper {
+    height: 30px;
+    background-color: bgColor;
+}
