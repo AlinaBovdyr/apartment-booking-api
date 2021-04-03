@@ -1,14 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import s from './ApartmentList.module.css';
 
-const ApartmentItem = ({imgUrl, price, rating, descr}) => {
+const ApartmentItem = ({imgSrc, price, rating, descr}) => {
     return (
-        <li>
-            <img src={imgUrl} alt="Apartment" />
-            <div>
-                <p>{descr}</p>
-                <p>{rating}</p>
-                <p>UAH {price} за ночь</p>
+        <li className={s.aptItem}>
+            <img className={s.img} src={imgSrc} alt="Apartment" />
+            <div className={s.overlay}>
+                <p className={s.descr}>{descr}</p>
+                <p className={s.rating}>{rating}</p>
+                <p className={s.price}><b>UAH {price}</b> за ночь</p>
             </div>
         </li>
     );
@@ -16,9 +17,9 @@ const ApartmentItem = ({imgUrl, price, rating, descr}) => {
 
 ApartmentItem.propTypes = {
   descr: PropTypes.string.isRequired,
-  rating: PropTypes.string.isRequired,
-  imgUrl: PropTypes.string,
-  price: PropTypes.string,
+  rating: PropTypes.number.isRequired,
+  imgSrc: PropTypes.string,
+  price: PropTypes.number,
 };
 
 export default ApartmentItem;

@@ -9,10 +9,10 @@
   background-image: linear-gradient(
     19deg,
     rgba(130, 139, 141, 0.5) 0%,
-    rgba(183, 33, 255, 0.5) 100%
+    rgba(15, 29, 45, 0.8) 100%
   );
   z-index: 1001;
-  color: #eee;
+  color: #FF662D;
 }
 
 .preloader__image {

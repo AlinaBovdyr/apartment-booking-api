@@ -9,7 +9,7 @@ const AptBar = () => {
         <div className={s.container}>
             <div className={s.fieldWrapper}>
                 <Select />
-                <Input placeholder="Цена, от" className={s.input}/>
+                <Input name="price" placeholder="Цена, от" className={s.input}/>
             </div>
             <Button className={s.btn} title="Подбор жилья"/>
         </div>

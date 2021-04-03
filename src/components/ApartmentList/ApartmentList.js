@@ -1,22 +1,24 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
+import {aptSelectors} from '../../redux/apartments'
 import ApartmentItem from './ApartmentItem';
-import Title from '../UI/Title';
+import s from './ApartmentList.module.css';
 
-const ApartmentList = ({apartments}) => {
+const ApartmentList = () => {
+    const apartments = useSelector(aptSelectors.getApartments);
+
     return (
-        <>
-            <Title title="Подборка согласно выбора" />
-            <ul>
-                {apartments.map(({ id, imgUrl, price, rating, descr }) => (
-                    <ApartmentItem
-                        key={id}
-                        imgSrc={imgUrl}
-                        price={price}
-                        rating={rating}
-                    />
-                ))}   
-            </ul>
-        </>
+        <ul className={s.aptList}>
+            {apartments.map(({ id, imgUrl, price, rating, descr }) => (
+                <ApartmentItem
+                    key={id}
+                    imgSrc={imgUrl}
+                    price={price}
+                    rating={rating}
+                    descr={descr}
+                />
+            ))}   
+        </ul>
     );
 };
 

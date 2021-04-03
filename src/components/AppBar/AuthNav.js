@@ -1,21 +1,20 @@
 import React from 'react';
-// import { NavLink } from 'react-router-dom';
-// import routes from '../../Route/routes';
+import { NavLink } from 'react-router-dom';
+import routes from '../../Router/routes';
 import s from './AppBar.module.css';
 
 const AuthNav = () => {
     return (
         <nav>
-            <a className={s.link} href="/login">Вход / </a>
-            <a className={s.link} href="/register">Регистрация</a>
-          {/* <NavLink
+          <NavLink
                 to={routes.login}
                 exact
                 className={s.link}
                 activeClassName={s.activeLink}
             >
-                Вход /
+                Вход
             </NavLink>
+            <span className={s.slash}>/</span>
             <NavLink
                 to={routes.register}
                 exact
@@ -23,7 +22,7 @@ const AuthNav = () => {
                 activeClassName={s.activeLink}
             >
                 Регистрация
-            </NavLink>   */}
+            </NavLink>  
         </nav>
     );
 };

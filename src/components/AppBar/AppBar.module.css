@@ -28,6 +28,15 @@
     line-height: 1.25;
 }
 
+.activeLink {
+    color: accentColor;
+}
+
 .avatar {
     margin-left: 10px;
+}
+
+.slash {
+    margin-right: 5px;
+    margin-left: 5px;
 }
