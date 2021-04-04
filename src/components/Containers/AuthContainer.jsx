@@ -3,14 +3,11 @@ import PropTypes from 'prop-types';
 import Footer from '../Footer';
 import s from './Containers.module.css';
 
-const AuthContainer = ({title, children}) => {
+const AuthContainer = ({children}) => {
     return (
         <>
            <section className={s.section}>
-                <div className={s.container}>
-                    <h2 className={s.title}>{title}</h2>
-                    {children}
-                </div>
+                {children}
             </section>
             <Footer/>
         </>

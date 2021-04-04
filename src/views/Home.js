@@ -1,9 +1,9 @@
 import React from 'react';
-import Container from '../components/Containers/mainContainer';
+import AuthContainer from '../components/Containers/AuthContainer';
 
 const HomeView = () => {
     return (
-        <Container/>
+        <AuthContainer />
     );
 };
 

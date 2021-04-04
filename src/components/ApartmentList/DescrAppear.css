@@ -1,0 +1,17 @@
+.appear-enter {
+  transform: translateY(100%);
+}
+
+.appear-enter-active {
+  transform: translateY(0);
+  transition: transform 250ms linear;
+}
+
+.appear-exit {
+  transform: translateY(0);
+}
+
+.appear-exit-active {
+  transform: translateY(100%);
+  transition: transform 250ms linear;
+}
