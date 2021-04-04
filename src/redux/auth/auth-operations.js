@@ -25,6 +25,7 @@ const register = credentials => async dispatch => {
         // const message = data.message ? data.message : 'User with this email is already registered'
         // const errorMessage = `${status} ${statusText}: ${message}`;
         dispatch(authActions.registerError(error.message));
+        console.log(error.message);
         // return toast.error(errorMessage);
     };
 };

@@ -40,3 +40,21 @@
     margin-right: 5px;
     margin-left: 5px;
 }
+
+.profileBox {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    min-width: 50px;
+    padding: 3px;
+    background: accentColor;
+    border: 1px solid transparent;
+    color: mainColor;
+    cursor: pointer;
+}

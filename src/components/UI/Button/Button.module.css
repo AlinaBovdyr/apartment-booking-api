@@ -10,4 +10,5 @@
     background: accentColor;
     border: 1px solid transparent;
     color: mainColor;
+    cursor: pointer;
 }

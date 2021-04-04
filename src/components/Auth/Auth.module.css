@@ -12,3 +12,8 @@
 .inputItem:last-child {
     margin-bottom: 0;
 }
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
